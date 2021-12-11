@@ -1,0 +1,15 @@
+@charset "ISO-8859-1";
+
+
+
+
+form {
+    overflow: hidden;
+}
+
+input {
+	display: block;
+    width: 200px;
+    margin: 5px;
+}
+

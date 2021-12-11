@@ -1,0 +1,106 @@
+package Viikko5;
+
+import java.util.Scanner;
+
+public class RemonttiOhjelmaMetodeilla {
+	
+	public Remontti remontti = new Remontti();
+	
+	
+	
+	private void teeRemontti() {
+		
+	Scanner input = new Scanner(System.in);
+	
+	System.out.print("Anna vuosi: ");
+	int vuosi = input.nextInt();
+	
+	System.out.print("Anna kuvaus: ");
+	input.nextLine();
+	String kuvaus = input.nextLine();
+	
+	
+	remontti.setVuosi(vuosi);
+	remontti.setKuvaus(kuvaus);
+	
+	System.out.println("Vuonna " + vuosi + " tehtiin remontti " + kuvaus);
+	
+	
+	}
+	
+
+	private void naytaRemontti() {
+		
+		
+		System.out.println("Vuosi: " + remontti.getVuosi());
+		System.out.println("Kuvaus: " + remontti.getKuvaus());
+		
+	}
+	
+	private void muutaRemontti() {
+		
+		Scanner input = new Scanner(System.in);
+		
+		
+		System.out.print("Anna vuosi: ");
+		int vuosi = input.nextInt();
+		
+		System.out.print("Anna kuvaus: ");
+		input.nextLine();
+		String kuvaus = input.nextLine();
+		
+		System.out.println("Vuonna " + vuosi + " tehtiin remontti " + kuvaus);
+		
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		RemonttiOhjelmaMetodeilla ohjelma = new RemonttiOhjelmaMetodeilla();
+		
+		int valinta = -1;
+		
+		Scanner input = new Scanner(System.in);
+		
+		
+		do {
+			System.out.println("\n1. Tee remontti");
+			System.out.println("2. Näytä remonttitiedot");
+			System.out.println("3. Muuta remonttia");
+			System.out.println("0. Lopetus");
+
+			System.out.print("Anna valintasi (0-3): ");
+			valinta = input.nextInt();
+
+			switch (valinta) {
+			
+			case 1: 
+				ohjelma.teeRemontti();
+				break;
+				
+			case 2: 
+				ohjelma.naytaRemontti();
+				break;
+				
+			case 3:
+				ohjelma.muutaRemontti();
+				break;
+				
+			case 0: 
+				break;
+				
+			default:
+				System.out.println("Virheellinen valinta");
+			}	
+			}	while (valinta != 0);
+			
+			}
+		}
+			
+		
+		
+
+	
+
+

@@ -1,0 +1,32 @@
+@charset "ISO-8859-1";
+
+body {
+	 background-color: #CCCCCC;
+	 display: block
+}
+
+table {
+	
+ 	grid-template-columns: auto auto auto auto;
+}
+
+input {
+	background-color: white;
+	border: 2px black;
+	
+}
+
+td {
+	color: black;
+	border: 1px black;
+	text-align: center;
+	padding: 10px;
+}
+
+
+tbody {
+    background-color: #FAFAFA;
+   	margin: 5px; 
+}
+
+

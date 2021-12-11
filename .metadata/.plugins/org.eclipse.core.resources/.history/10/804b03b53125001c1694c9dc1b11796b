@@ -1,0 +1,34 @@
+package Viikko7;
+
+import java.util.Scanner;
+
+public class DominionlistaOhjelma {
+	
+	public void lisaaPelaaja() {
+		Scanner input = new Scanner(System.in);
+	
+		System.out.print("Montako pelaajia on: ");
+		int maara = input.nextInt();
+		int i = 0;
+		
+		
+		
+		do {
+			System.out.print("Anna pelaajan nimi: ");
+			String pelaaja = input.nextLine();
+			i = i + 1;
+			
+		} while (i == maara);
+	}
+	
+
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+
+	}
+
+}

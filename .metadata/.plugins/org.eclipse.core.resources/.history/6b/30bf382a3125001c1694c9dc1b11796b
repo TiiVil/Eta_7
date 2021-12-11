@@ -1,0 +1,10 @@
+package Viikko7;
+
+public class DominionlistaOhjelma {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

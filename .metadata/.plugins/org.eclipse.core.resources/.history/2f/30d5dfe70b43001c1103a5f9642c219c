@@ -1,0 +1,50 @@
+<%@ page import="java.time.LocalDate" %> 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="scripts/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+<%
+	String enimi = request.getParameter("etunimi");
+	String snimi = request.getParameter("sukunimi");
+	String sposti = request.getParameter("sähköposti");
+	String puh = request.getParameter("puhelin");
+	String vuosi = request.getParameter("syntymävuosi");
+	
+
+	LocalDate tanaan = LocalDate.now();
+	int tamavuosi = tanaan.getYear();
+	
+	int ika = tamavuosi - Integer.parseInt(vuosi);
+	
+	if (ika>18) {
+	
+	out.print("Etunimi: " + enimi + "<br>Sukunimi: " + snimi +
+			"<br>Sähköposti: " + sposti + "<br>Puhelin: " + puh +
+			"<br>Syntymävuosi: " + vuosi);
+	}
+	
+	else {
+		out.print("Alaikäinen");
+	}
+%>
+<script>
+$(document).ready(function(){
+	var etunimi = requestURLParam("etunimi");
+	var sukunimi = rquestURLParam("sukunimi");
+	var sposti = requestURLParam("sposti");
+	var puh = requestURLParam("puhelin");
+	var vuosi = requestURLParam("ika");
+	
+	$("#etunimi").text("Nimi on " + nimi);
+	$("#ika").text("Ikä on " + requestURLParam("ika"));
+});
+</script>
+</body>
+</html>

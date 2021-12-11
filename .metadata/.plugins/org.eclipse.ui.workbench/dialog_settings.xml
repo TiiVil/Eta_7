@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+	</section>
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.ZipFile"/>
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.FileSystem"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jdt.ui.Java"/>
+		</list>
+	</section>
+	<section name="ZipFileImportWizard">
+		<item key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\tiiah\OneDrive\Työpöytä\Koulu\Ohjelmointi 2\SQLite\kaksitasoinen_ohjelma.zip"/>
+			<item value="C:\Users\tiiah\Downloads\kertaus.zip"/>
+			<item value="C:\Users\tiiah\Downloads\Tapaamisessa 28.9. tehtyä-20210928.zip"/>
+			<item value="C:\Users\tiiah\Downloads\yhteyssuhde.zip"/>
+			<item value="C:\Users\tiiah\Downloads\luokka.zip"/>
+			<item value="C:\Users\tiiah\Downloads\metodi.zip"/>
+			<item value="C:\Users\tiiah\Downloads\taulukko (1).zip"/>
+			<item value="C:\Users\tiiah\Downloads\merkkijono.zip"/>
+			<item value="C:\Users\tiiah\Downloads\toistorakenne (1).zip"/>
+			<item value="C:\Users\tiiah\Downloads\perusteita (1).zip"/>
+		</list>
+	</section>
+	<section name="FileSystemExportWizard">
+		<item key="WizardFileSystemResourceExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID" value="false"/>
+		<item key="WizardFileSystemResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="false"/>
+		<item key="WizardFileSystemResourceExportPage1.STORE_RESOLVE_LINKED_RESOURCES_ID" value="false"/>
+		<list key="WizardFileSystemResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\tiiah\OneDrive\Työpöytä\Koulu\Ohjelmointi 2\Viikko 3"/>
+			<item value="C:\Users\tiiah\OneDrive\Työpöytä\Koulu\Ohjelmointi 2\Viikko 2"/>
+			<item value="C:\Users\tiiah\OneDrive\Työpöytä\Koulu\Ohjelmointi 2\Viikko1\Tehtävä3"/>
+			<item value="C:\Users\tiiah\OneDrive\Työpöytä\Koulu\Ohjelmointi 2\Viikko1\Tehtävä2"/>
+			<item value="C:\Users\tiiah\OneDrive\Työpöytä\Koulu\Ohjelmointi 2\Viikko1\Tehtävä1"/>
+		</list>
+	</section>
+</section>

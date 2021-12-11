@@ -1,0 +1,31 @@
+package Viikko7;
+
+public class Pelaaja {
+	
+	private String nimi;
+	
+	public Pelaaja() {
+		nimi = "";
+	}
+	
+	public Pelaaja(String nimi) {
+		this.nimi = nimi;
+	}
+
+	public String getNimi() {
+		return nimi;
+	}
+
+	public void setNimi(String nimi) {
+		this.nimi = nimi;
+	}
+
+	@Override
+	public String toString() {
+		return "Pelaaja [nimi=" + nimi + "]";
+	}
+	
+	
+	
+
+}

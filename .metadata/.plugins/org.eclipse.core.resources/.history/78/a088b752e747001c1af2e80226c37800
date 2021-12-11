@@ -1,0 +1,16 @@
+@charset "ISO-8859-1";
+
+
+
+
+tbody {
+    overflow: hidden;
+}
+
+script {
+	display: block;
+    width: 200px;
+    margin: 5px;
+    
+}
+

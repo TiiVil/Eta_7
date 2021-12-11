@@ -1,0 +1,34 @@
+@charset "ISO-8859-1";
+
+
+
+body {
+	 background-color: #CCCCCC;
+}
+
+table.listaus {
+	
+ 	border-collapse: collapse;
+ 	border: 1px solid black;
+}
+
+
+input {
+	background-color: white;
+	border: 2px black;
+	
+}
+
+td {
+	color: black;
+	text-align: center;
+	padding: 15px;
+}
+
+
+tbody {
+    background-color: #FAFAFA;
+  
+}
+
+

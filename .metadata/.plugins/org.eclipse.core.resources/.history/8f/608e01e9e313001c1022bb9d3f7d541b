@@ -1,0 +1,36 @@
+package Viikko4;
+
+import java.util.Scanner;
+
+public class Tunnus {
+	
+	public String teeTunnus(String suku, String etu) {
+		
+		String tunnus = suku.substring(0, 3) + etu.substring(0, 3);
+		
+		suku.toLowerCase();
+		etu.toLowerCase();
+		
+		return tunnus;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Tunnus ohjelma = new Tunnus();
+		
+		Scanner input = new Scanner(System.in);
+		
+		String etu, suku, tunnus;
+		System.out.print("Anna sukunimi: ");
+		suku = input.nextLine();
+		System.out.print("Anna etunimi: ");
+		etu = input.nextLine();
+		
+		tunnus = ohjelma.teeTunnus(suku, etu);
+		
+		System.out.println("Tunnus on " + tunnus);
+
+	}
+
+}

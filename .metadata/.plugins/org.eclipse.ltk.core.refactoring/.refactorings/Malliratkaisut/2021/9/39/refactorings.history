@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Henkilo.java&apos; to &apos;Palautettavat/src/Viikko6&apos;&#x0D;&#x0A;- Original project: &apos;Malliratkaisut&apos;&#x0D;&#x0A;- Destination element: &apos;Palautettavat/src/Viikko6&apos;&#x0D;&#x0A;- Original element: &apos;Henkilo.java&apos;" description="Copy file" destination="=Palautettavat/src&lt;Viikko6" element1="yhteyssuhde/Henkilo.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1632849371763" units="0" version="1.0"/>
+</session>

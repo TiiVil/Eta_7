@@ -1,0 +1,34 @@
+package Viikko4;
+
+import java.util.Scanner;
+
+public class Kellonaika {
+	
+	public String kysyKellonaika() {
+		
+		String kellonaika;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Anna kellonaika muodossa tt:mm: ");
+		kellonaika = input.nextLine();
+		
+		
+		return kellonaika;
+	}
+
+		boolean tarkastaKellonaika(String kellonaika) {
+			
+			String kellonaika = Integer.parseInt("kellonaika");
+			
+			
+			
+		}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+
+	}
+
+}

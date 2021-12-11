@@ -1,0 +1,62 @@
+package Viikko4;
+
+import java.util.Scanner;
+
+public class Kellonaika {
+	
+	public String kysyKellonaika() {
+		
+		String kellonaika;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Anna kellonaika muodossa tt:mm: ");
+		kellonaika = input.nextLine();
+		
+		
+		return kellonaika;
+	}
+
+		boolean tarkastaKellonaika(String kellonaika) {
+			
+			String tunnit = kellonaika.substring(0, 2);
+			String minuutit = kellonaika.substring(4, 5);
+			
+		
+			
+			
+			if (tunnit.matches("0-24") && minuutit.matches("0-60")) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+			
+			
+			
+		
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Kellonaika ohjelma = new Kellonaika();
+
+		String kellonaika;
+
+		
+		kellonaika = ohjelma.kysyKellonaika();
+	
+		
+		
+
+		if (ohjelma.tarkastaKellonaika(kellonaika) == true) {
+			System.out.println("Kellonaika on oikein");
+		} else {
+			System.out.println("Kellonaika on v‰‰rin");
+		}
+	}
+
+
+
+	}
+
+

@@ -1,0 +1,11 @@
+package Viikko5;
+
+public class RemonttiOhjelmaMetodeilla {
+
+	public Remontti remontti = null;
+	
+	public void teeRemontti();
+	
+	
+
+}

@@ -1,0 +1,67 @@
+package Viikko4;
+
+import java.util.Scanner;
+
+public class Kulutus {
+	
+	public int kysyKilometrit() {
+		
+		Scanner input = new Scanner(System.in);
+		
+		int kilometrit;
+		
+		System.out.print("Anna ajetut kilometrit: ");
+		kilometrit = input.nextInt();
+		return kilometrit;
+	
+	}
+	
+	public double kysyTankkaus() {
+		double tankattu;
+		
+		Scanner input = new Scanner(System.in);
+		
+		
+		System.out.print("Anna tankattu m‰‰r‰: ");
+		tankattu = input.nextDouble();
+		
+		return tankattu;
+	
+	}
+	
+	double laskeKulutus(int kilometrit, double tankattu) {
+		
+		double kulutus = (double) tankattu / kilometrit * 100;
+		
+		return kulutus;
+		
+	}
+	
+	void naytaKulutus(double kulutus) {
+		
+		System.out.println("Kulutus/100km on " + kulutus + " litraa");
+		
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Kulutus ohjelma = new Kulutus(); 
+		
+		
+		int kilometrit = ohjelma.kysyKilometrit(kilometrit);
+		double tankattu = ohjelma.kysyTankkaus(tankattu);
+		double kulutus = ohjelma.laskeKulutus(tankattu, kilometrit);
+		
+		ohjelma.naytaKulutus(kulutus);
+		
+		
+		
+		
+		
+		
+	}
+
+}

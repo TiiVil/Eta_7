@@ -1,0 +1,40 @@
+@charset "ISO-8859-1";
+
+body {
+	 background-color: #CCCCCC;
+}
+
+table {
+	
+	display: block;
+    color: black;
+    padding: bottom 10px;
+	border: black 2px;
+	table-layout: fixed;
+ 	width: 180px;
+}
+
+input {
+	background-color: white;
+	border: 2px black;
+	
+}
+
+td {
+	color: black;
+	border: 1px black;
+	text-align: center;
+	padding: 10px;
+}
+
+th {
+	margin: 10px;
+}
+
+
+tbody {
+    background-color: #FAFAFA;
+   	margin: 5px; 
+}
+
+

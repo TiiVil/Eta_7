@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+
+
+table {
+	
+	display: block;
+    width: 200px;
+    margin: 5px;
+    color: green;
+	
+}
+
+th {
+	  color: green;
+}
+
+tbody {
+    overflow: hidden;
+}
+
+

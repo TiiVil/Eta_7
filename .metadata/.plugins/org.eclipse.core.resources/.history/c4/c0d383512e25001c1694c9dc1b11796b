@@ -1,0 +1,53 @@
+package Viikko4;
+
+import java.util.Scanner;
+
+public class Dominion {
+	
+	int laskePisteet(int kirous, int tila, int pitaja, int laani) {
+		
+		kirous = kirous * -1;
+		tila = tila * 2;
+		pitaja = pitaja * 5;
+		laani = laani * 8;
+		
+		int pisteet = kirous + tila + pitaja + laani;
+		
+		
+		return pisteet;
+	}
+	
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Dominion ohjelma = new Dominion();
+		
+		Scanner input = new Scanner(System.in);
+		
+		int pisteet, kirous, tila, pitaja, laani;
+		int yhteensa;
+				
+		System.out.print("Anna kirouskorttien m‰‰r‰:");
+		kirous = input.nextInt();
+		System.out.print("Anna tilakorttien m‰‰r‰: ");
+		tila = input.nextInt();
+		System.out.print("Anna pit‰j‰korttien m‰‰r‰: ");
+		pitaja = input.nextInt();
+		System.out.print("Anna l‰‰nikorttien m‰‰r‰: ");
+		laani = input.nextInt();
+		
+		
+		 yhteensa = ohjelma.laskePisteet(kirous, tila, pitaja, laani);
+		 
+		 System.out.println("Pisteiden yhteism‰‰r‰ on " + yhteensa);
+		 
+		
+		
+		
+		
+
+	}
+
+}

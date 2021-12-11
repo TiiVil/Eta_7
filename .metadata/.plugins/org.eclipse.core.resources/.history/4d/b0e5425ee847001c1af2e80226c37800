@@ -1,0 +1,29 @@
+@charset "ISO-8859-1";
+
+body {
+	color: green;
+}
+
+table {
+	
+	display: block;
+    width: 200px;
+    margin: 5px;
+    color: green;
+	
+}
+
+th {
+	  color: green;
+	  border: black 2px;
+}
+
+td {
+	color:green;
+}
+
+tbody {
+    color: green;
+}
+
+

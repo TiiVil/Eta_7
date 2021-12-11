@@ -1,0 +1,40 @@
+package Viikko5;
+
+import java.util.Scanner;
+
+public class RemonttiOhjelma {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int vuosi;
+		String kuvaus;
+		
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Anna vuosi: ");
+		vuosi = input.nextInt();
+		
+		Remontti remontti = new Remontti();
+		
+		if (remontti.setVuosi(vuosi) == true) {
+			
+			System.out.print("Anna kuvaus: ");
+			input.nextLine();
+			kuvaus = input.nextLine();
+			
+			remontti.setKuvaus(kuvaus);
+			remontti.setVuosi(vuosi);
+			
+			System.out.println("Vuonna " + vuosi + " tehtiin remontti " + kuvaus);
+			}
+		
+		else {
+			System.out.println("Vuosi ei voi olla tulevaisuudessa");
+		}
+		
+
+	}
+
+}

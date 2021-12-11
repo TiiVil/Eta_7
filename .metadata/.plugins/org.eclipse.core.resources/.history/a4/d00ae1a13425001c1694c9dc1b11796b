@@ -1,0 +1,82 @@
+package Viikko7;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class DominionlistaOhjelma {
+	
+	ArrayList<Pelaaja> pelaajaLista = new ArrayList<Pelaaja>();
+	
+	public void lisaaPelaaja() {
+		Scanner input = new Scanner(System.in);
+	
+		System.out.print("Montako pelaajia on: ");
+		int maara = input.nextInt();
+		int i = 0;
+		String nimi = "";
+		
+		
+		do {
+			System.out.print("Anna pelaajan nimi: ");
+			nimi = input.nextLine();
+			i = i + 1;
+			
+			
+		} while (i == maara);
+		
+		Pelaaja pelaaja = new Pelaaja(nimi);
+		pelaajaLista.add(pelaaja);
+	}
+	
+	public void kerroPisteet() {
+		Scanner input = new Scanner(System.in);
+		String kortti;
+		int pisteet = 0;
+		int maara = 0;
+		
+		System.out.print("K=kirous, T=tila, P=pit‰j‰, L=l‰‰ni: ");
+		kortti = input.nextLine();
+		
+		do {
+		if (kortti.equalsIgnoreCase("k") == true) {
+			pisteet = pisteet - 1;
+		}
+		else if (kortti.equalsIgnoreCase("t") == true) {
+			pisteet = pisteet + 2;
+		}
+		else if (kortti.equalsIgnoreCase("p") == true) {
+			pisteet = pisteet + 5;
+		}
+		else if (kortti.equalsIgnoreCase("l") == true) {
+			pisteet = pisteet + 8;
+			maara = maara + 1;
+		}
+		}while (maara == 8);
+		
+		
+	}
+	
+	public void listaaNimet() {	
+		for (Pelaaja pelaaja : pelaajaLista) {
+			System.out.println(pelaaja.getPelaaja());	
+		}
+	}
+	
+	
+	
+	public void lisaaPisteet() {
+		
+	}
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+
+	}
+
+}
